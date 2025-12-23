@@ -1,0 +1,19 @@
+[project]
+name = "agent-service"
+version = "0.1.0"
+description = "AI agent orchestration service with MCP tools"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.0.0",
+    "pydantic>=2.0",
+    "fastapi>=0.100.0",
+    "uvicorn>=0.23.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+agent-service = "agent_service.app:main"
+

@@ -1,0 +1,19 @@
+[project]
+name = "orders-mcp-server"
+version = "0.1.0"
+description = "MCP server exposing intentful tools over an existing backend"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.0.0",
+    "pydantic>=2.0",
+    "httpx>=0.25.0",
+    "tenacity>=8.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+orders-mcp = "mcp_server.server:main"
+
