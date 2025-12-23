@@ -31,6 +31,9 @@ The [Model Context Protocol](https://modelcontextprotocol.io/) is an open protoc
 └─────────────┘     └─────────────────┘     └─────────────┘     └──────────────┘
 ```
 
+<img width="986" height="523" alt="diagram-export-23-12-2025-14_09_21" src="https://github.com/user-attachments/assets/11d82137-9d73-4683-9075-48c8c97b1aa3" />
+
+
 **Communication Patterns:**
 - Client ↔ Agent Service: HTTP REST API
 - Agent Service ↔ MCP Server: stdio (JSON-RPC over subprocess)
